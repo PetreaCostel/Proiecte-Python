@@ -1,0 +1,10 @@
+def parolica():
+ f = input("Care este parola corecta ?")
+
+ if f == "12345678":
+     print("Parola este corecta !")
+ else:
+     print("Parola introdusa este gresita !")
+
+parolica()
+
