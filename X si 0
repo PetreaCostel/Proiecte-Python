@@ -1,0 +1,48 @@
+teren = [['-', '-', '-'],
+         ['-', '-', '-'],
+         ['-', '-', '-']]
+player = 'X'
+
+def afiseazateren():
+    for rand in teren:
+        for elem in rand:
+            print(elem, end=' ')
+        print()
+def jocterminat():
+    if teren[0][0] == teren[1][1] == teren[2][2] and teren[0][0] !='-':
+        print('A castigat ' + teren[0][0])
+        return True
+    if teren[0][2] == teren[1][1] == teren[2][0] and teren[0][2] !='-':
+        print('A castigat ' + teren[1][1])
+        return True
+    elif teren[0][0] == teren[1][0] == teren[2][0] and teren[0][0] !='-':
+        print('A castigat ' + teren[0][0])
+        return True
+    elif teren[0][0] == teren[0][1] == teren[0][2] and teren[0][0] !='-':
+        print('A castigat ' + teren[0][0])
+        return True
+    elif teren[0][2] == teren[1][2] == teren[2][2] and teren[0][2] !='-':
+        print('A castigat ' + teren[0][2])
+        return True
+    elif teren[2][0] == teren[2][1] == teren[2][2] and teren[2][0] !='-':
+        print('A castigat ' + teren[2][0])
+        return True
+    for rand in teren:
+        if '-' in rand:
+         return False
+
+    return True
+while not jocterminat():
+    rand = int(input("rand = "))
+    coloana = int(input("coloana = "))
+    print(rand)
+    print(coloana)
+    if (rand >= 3 or rand < 0 or coloana >= 3 or coloana < 0) or teren[rand][coloana] in ['X', "0"]:
+        print("invalid")
+    else:
+        teren[rand][coloana] = player
+        afiseazateren()
+        if player == 'X':
+          player = '0'
+        else:
+          player = 'X'

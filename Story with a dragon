@@ -1,0 +1,61 @@
+from random import choice
+
+print("We are going to hear a story about a dragon!")
+
+name = input("What is the name of the dragon?")
+#print("Excellent. The dragon is called " + name)
+
+if name == "George":
+      print("This is a beautiful name !")
+else:
+      print("That is a fuck name !")
+
+size = input("Is the dragon big or small ?")
+#print("It was a " + size + " dragon")
+
+if size == "big":
+      print("Your dragon is very powerful")
+else:
+      print("you have a very weak dragon")
+
+age = input("How old is the dragon? ")
+#print("The dragon is " + age + " years old")
+
+print("")
+print("")
+
+if int(age) > 1000:
+    description = "old"
+else:
+    description = "young"
+
+print("It was an " + description + " dragon.")
+print("")
+print("")
+
+things = ["Food","Cofee","Friends","ilie"]
+friends = ["Costel","Andrei","Sergiu"]
+actions = ["fight","run","push him"]
+places = ["Ramnicu Sarac","George's Home","Costel's Home"]
+
+friend = choice(friends)
+print("The friend is " + friend)
+thing = choice(things)
+print("The thing is " + thing)
+action = choice(actions)
+print("The action is " + action)
+place = choice(places)
+print("the place is " + place)
+
+story = "Once upon a time, there was a dragon called " + name + ". The dragon was a very " + description + " creature, and it was very " + size + ". It liked nothing better than to " +  action + " " + thing + ". Sadly, the dragon was so great at this that it ran out of " + thing + " to " + action + " in " + place + ". The dragon became very bored. Luckily the dragon had a friend called " + friend + ". " + friend + " knew where the dragon could find lots of " + thing + " and the two of them travelled far away from " + place + " and found a land filled with lots of lovely " + thing + " to " + action + ". " + name + " and " + friend + " lived happily ever, with all the " + thing + " they wanted."
+print(story)
+friend = choice(friends)
+print("The friend is " + friend)
+thing = choice(things)
+print("The thing is " + thing)
+action = choice(actions)
+print("The action is " + action)
+place = choice(places)
+print("the place is " + place)
+
+story = 

@@ -1,0 +1,39 @@
+import random
+
+f_pc = random.randint(1,3)
+
+#legenda
+#piatra = 1
+#hrtie = 2
+#foarfeca = 3
+
+
+f = input("piatra, hartie, foarfeca")
+
+def rockpapersrissors():
+  if f == "piatra":
+     if f_pc == 1:
+         print("draw")
+     if f_pc == 2:
+         print("lose")
+     if f_pc == 3:
+         print("win")
+  elif f == "hartie":
+      if f_pc == 2:
+          print("draw")
+      if f_pc == 3:
+          print("lose")
+      if f_pc == 1:
+          print("win")
+  elif f == "foarfeca":
+      if f_pc == 3:
+          print("draw")
+      if f_pc == 1:
+          print("lose")
+      if f_pc == 2:
+          print("win")
+
+  else:
+     print("Nu inteleg nimic, nu trisa !")
+
+rockpapersrissors()
